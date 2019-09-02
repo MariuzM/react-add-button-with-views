@@ -3,6 +3,8 @@ import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-do
 import styled from 'styled-components';
 import { createContext } from 'react';
 
+import './App.scss';
+
 // function Navigation() {
 //   return (
 //     <div className="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,7 +40,7 @@ export default function App() {
   return (
     <>
       <Router>
-        <div className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="navbar navbar-dark bg-dark">
           <ul className="navbar">
             <NavLink exact className="nav-link" to="/">
               First Page
@@ -51,11 +53,14 @@ export default function App() {
             </NavLink>
           </ul>
 
-          <StyledCartButton total={total} />
-
-          <button type="button" className="btn btn-secondary" onClick={addToCart}>
-            Add to cart
-          </button>
+          <form className="form-inline">
+            <button className="btn btn-secondary m-2" type="button" onClick={addToCart}>
+              Add to cart
+            </button>
+            <div>
+              <StyledCartButton total={total} />
+            </div>
+          </form>
         </div>
 
         <Switch>
