@@ -109,6 +109,7 @@ const StyledCartButton = styled(CartButton)`
   border: none;
   border-radius: 5px;
   color: #fff;
+  padding-top: 2px;
   height: 40px;
   line-height: 44px;
   font-size: 20px;
