@@ -18,10 +18,10 @@ const CartButton = ({ className, total }) => {
     <div className={className}>
       <CartIcon />
       {/* <span className="cart-button-total">{total}</span> */}
-      <span className={total >= 0 ? 'cart-button-total' : ''}>
-        {/* wwqeqw */}
-        {total >= 0 ? total : ''}
-      </span>
+      {/* <span className={total >= 1 ? 'cart-button-total' : ''}>
+        {total >= 1 ? total : ''}
+			</span> */}
+      {total > 0 ? <span className="cart-button-total">{total}</span> : null}
     </div>
   );
 };

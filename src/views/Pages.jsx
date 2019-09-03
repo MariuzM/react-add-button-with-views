@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-dom';
 import { CartContext } from '../components/_CartContext';
-// import Test from './views/Test';
+import TestPage from './_TestPage';
 
 export const Button = ({ addToCart }) => {
   return (
@@ -37,7 +37,8 @@ export default function SwitchPages() {
 			/> */}
 
       <Route exact path="/test">
-        <div>{total}</div>
+        <TestPage />
+        {/* <div>{total}</div> */}
         {/* <Test addToCart={addToCart} total={total} /> */}
       </Route>
 
