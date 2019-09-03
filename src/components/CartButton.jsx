@@ -27,7 +27,7 @@ const CartButton = ({ className, total }) => {
 };
 
 const buttonBackground = '#0071db';
-export const StyledCartButton = styled(CartButton)`
+const StyledCartButton = styled(CartButton)`
   background: ${buttonBackground};
   border: none;
   border-radius: 5px;
