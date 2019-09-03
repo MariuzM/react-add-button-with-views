@@ -1,8 +1,14 @@
 import React from 'react';
+import { Button } from '../App';
 
-const ThirdPage = total => {
+const ThirdPage = (addToCart, total) => {
   console.log(total);
-  return <div>Third Page</div>;
+  return (
+    <>
+      <div>Third Page</div>
+      <Button onClick={addToCart} />
+    </>
+  );
 };
 
 export default ThirdPage;
