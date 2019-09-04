@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import { AnimateOnChange, Bounce } from 'react-animation';
+import styled, { keyframes } from 'styled-components';
 // import { CartContext } from '../components/_CartContext';
 
 const CartIcon = () => (
@@ -19,9 +20,10 @@ const CartButton = ({ className, total }) => {
       <CartIcon />
       {/* <span className="cart-button-total">{total}</span> */}
       {/* <span className={total >= 1 ? 'cart-button-total' : ''}>
-        {total >= 1 ? total : ''}
-			</span> */}
-      {total > 0 ? <span className="cart-button-total">{total}</span> : null}
+	        {total >= 1 ? total : ''}
+				</div> */}
+      {/* {total > 0 ? <span className="cart-button-total">{total}</span> : null} */}
+      {total > 0 ? <div className="cart-button-total">{total}</div> : null}
     </div>
   );
 };

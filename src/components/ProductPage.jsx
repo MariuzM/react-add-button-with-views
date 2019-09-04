@@ -1,20 +1,14 @@
-import React, { useState, useContext } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-// import ImageAndVariations from '../ImageAndVariations';
+import React from 'react';
 import { CartContext } from './_CartContext';
 
-const ProductPage = ({ title, description, image }) => {
-  const { addToCart } = useContext(CartContext);
-  const [currentPrice, setCurrentPrice] = useState('19.99');
-  const [addingToCart, setAddingToCart] = useState(false);
-  const handleAddToCart = () => {
-    addToCart();
-    setAddingToCart(true);
-    setTimeout(() => setAddingToCart(false), 500);
-  };
+const ProductPage = ({ image, description }) => {
+  const { title, currentPrice, addingToCart, handleAddToCart, map } = React.useContext(
+    CartContext
+  );
+
   return (
     <div>
+      <div>{map} Just Testing</div>
       <div className="content">
         <img className="image" src={image} />
         <h1 className="title">{title}</h1>
