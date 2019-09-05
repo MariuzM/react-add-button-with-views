@@ -8,7 +8,7 @@ export const itemProducts = [
     id: 1,
     image: randomImage,
     description: description,
-    price: 100,
+    price: 44.9,
     inCart: false,
     count: 0,
     total: 0
