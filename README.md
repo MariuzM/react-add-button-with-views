@@ -8,7 +8,7 @@ Creating simple app to test React logic using with Context + Hooks
 npm install
 ```
 
-or short hand
+or shorthand
 
 ```bash
 npm i
