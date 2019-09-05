@@ -7,10 +7,10 @@ export default function _3rdPage() {
     <Row>
       {itemProducts.map(item => {
         const { id, price, image } = item;
-        const newPrice = Number(price).toFixed(2);
+        // const newPrice = Number(price).toFixed(2);
         return (
           <Col key={id}>
-            <div>{newPrice}</div>
+            <div>{Number(price).toFixed(2)}</div>
             <img className="image" src={image} />
           </Col>
         );
