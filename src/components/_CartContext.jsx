@@ -1,5 +1,4 @@
 import React from 'react';
-import { itemProducts } from './DataBase';
 
 export const CartContext = React.createContext();
 
@@ -15,9 +14,6 @@ export const CartProvider = ({ children }) => {
     setAddingToCart(true);
     setTimeout(() => setAddingToCart(false), 500);
   };
-
-  const map = itemProducts.map(item => <div key={item.id}>{item.price}</div>);
-
   return (
     <CartContext.Provider
       value={{
@@ -25,8 +21,7 @@ export const CartProvider = ({ children }) => {
         addToCart,
         currentPrice,
         addingToCart,
-        handleAddToCart,
-        map
+        handleAddToCart
       }}
     >
       {children}

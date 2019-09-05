@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-dom';
 import { CartContext } from '../components/_CartContext';
 import _1stPage from './_1stPage';
+import _3rdPage from './_3rdPage';
+
 import _TestPage from './_TestPage';
 import { AnimateOnChange } from 'react-animation';
 
@@ -31,13 +33,10 @@ export default function SwitchPages() {
         </button>
       </Route>
 
-      {/* <Route
-				exact
-				path="/third"
-				component={ThirdPage}
-				total={total}
-				addToCart={addToCart}
-			/> */}
+      <Route exact path="/third">
+        Third Page
+        <_3rdPage />
+      </Route>
 
       <Route exact path="/test">
         <_TestPage />

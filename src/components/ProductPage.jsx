@@ -8,9 +8,9 @@ const ProductPage = ({ image, description }) => {
 
   return (
     <div>
-      <div>{map} Just Testing</div>
+      {/* <div>{map} Just Testing</div> */}
       <div className="content">
-        <img className="image" src={image} />
+        {/* <img className="image" src={image} /> */}
         <h1 className="title">{title}</h1>
         <p className="description">{description}</p>
         <p className="price">${currentPrice}</p>

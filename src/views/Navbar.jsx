@@ -17,6 +17,10 @@ export default function Navbar2() {
           Second Page
         </NavLink>
 
+        <NavLink to="/third" className="nav-link">
+          Third Page
+        </NavLink>
+
         <NavLink to="/test" className="nav-link">
           Test Page
         </NavLink>
