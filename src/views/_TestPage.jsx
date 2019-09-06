@@ -1,15 +1,18 @@
 import React from 'react';
 import { CartContext } from '../components/_CartContext';
-import { Button } from './Pages';
+import AddToCartButton from '../components/AddToCartButton';
+
+// import { Button } from './Pages';
 
 export default function _TestPage() {
-  const { total, addToCart } = React.useContext(CartContext);
+  const { total } = React.useContext(CartContext);
   return (
     <>
       <div>{total}</div>
-      <div>
+      <AddToCartButton />
+      {/* <div>
         <Button addToCart={addToCart}>Add Prop</Button>
-      </div>
+      </div> */}
     </>
   );
 }

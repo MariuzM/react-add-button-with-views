@@ -4,15 +4,15 @@ import { Row, Col } from 'react-bootstrap';
 
 export default function _3rdPage() {
   return (
-    <Row>
+    <Row className="d-flex justify-content-center">
       {itemProducts.map(item => {
         const { id, price, image } = item;
         // const newPrice = Number(price).toFixed(2);
         return (
-          <Col key={id}>
+          <div key={id} className="m-3">
             <div>{Number(price).toFixed(2)}</div>
             <img className="image" src={image} />
-          </Col>
+          </div>
         );
       })}
     </Row>
