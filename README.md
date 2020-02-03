@@ -1,5 +1,3 @@
-# NPM Package Selector
-
 Creating simple app to test React logic using Context, Hooks and API cal's
 
 ### Installing
