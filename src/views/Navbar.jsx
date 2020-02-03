@@ -1,11 +1,11 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import StyledCartButton from '../components/CartButton';
-import { CartContext } from '../components/_CartContext';
-import { Navbar } from 'react-bootstrap';
+import React, { useContext } from 'react'
+import { NavLink } from 'react-router-dom'
+import StyledCartButton from '../components/CartButton'
+import { CartContext } from '../components/_CartContext'
+import { Navbar } from 'react-bootstrap'
 
-export default function Navbar2() {
-  const { total } = React.useContext(CartContext);
+export default function NavbarPage() {
+  const { total } = useContext(CartContext)
   return (
     <Navbar bg="dark" expand="lg" sticky="top" className="justify-content-between">
       <Navbar className="justify-content-between">
@@ -28,5 +28,5 @@ export default function Navbar2() {
 
       <StyledCartButton total={total} />
     </Navbar>
-  );
+  )
 }

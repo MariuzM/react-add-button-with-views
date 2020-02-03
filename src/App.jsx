@@ -1,10 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './views/Navbar';
-import { CartProvider } from './components/_CartContext';
-import Pages from './views/Pages';
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Navbar from './views/Navbar'
+import { CartProvider } from './components/_CartContext'
+import Pages from './views/Pages'
 
-import './App.scss';
+import './App.scss'
 
 export default function App() {
   return (
@@ -14,5 +14,5 @@ export default function App() {
         <Pages />
       </Router>
     </CartProvider>
-  );
+  )
 }

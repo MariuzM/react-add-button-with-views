@@ -1,29 +1,30 @@
 {
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel dev src/index.html"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "sass": "^1.22.10"
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.3.3",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.3.3",
-    "bootstrap": "^4.3.1",
-    "react": "^16.9.0",
-    "react-animation": "^1.2.0",
-    "react-bootstrap": "^1.0.0-beta.12",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1",
-    "react-swipeable-views": "^0.13.3",
-    "styled-components": "^4.3.2"
-  }
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel dev src/index.html"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.8.4",
+		"@babel/plugin-proposal-class-properties": "^7.8.3",
+		"@babel/preset-env": "^7.8.4",
+		"@babel/preset-react": "^7.8.3",
+		"sass": "^1.25.0"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.9.1",
+		"@material-ui/icons": "^4.9.1",
+		"@material-ui/styles": "^4.9.0",
+		"bootstrap": "^4.4.1",
+		"parcel": "^1.12.4",
+		"react": "^16.12.0",
+		"react-animation": "^1.2.2",
+		"react-bootstrap": "^1.0.0-beta.16",
+		"react-dom": "^16.12.0",
+		"react-router-dom": "^5.1.2",
+		"react-swipeable-views": "^0.13.7",
+		"styled-components": "^5.0.0"
+	}
 }

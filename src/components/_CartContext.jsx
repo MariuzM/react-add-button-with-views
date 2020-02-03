@@ -1,19 +1,17 @@
-import React from 'react';
+import React, { useState, createContext } from 'react'
 
-export const CartContext = React.createContext();
+export const CartContext = createContext()
 
 export const CartProvider = ({ children }) => {
-  const [total, setCartTotal] = React.useState(0);
-  const addToCart = () => {
-    return setCartTotal(total + 1);
-  };
-  const [currentPrice, setCurrentPrice] = React.useState('19.99');
-  const [addingToCart, setAddingToCart] = React.useState(false);
+  const [total, setCartTotal] = useState(0)
+  const addToCart = () => setCartTotal(total + 1)
+  const [currentPrice] = useState('19.99')
+  const [addingToCart, setAddingToCart] = useState(false)
   const handleAddToCart = () => {
-    addToCart();
-    setAddingToCart(true);
-    setTimeout(() => setAddingToCart(false), 500);
-  };
+    addToCart()
+    setAddingToCart(true)
+    setTimeout(() => setAddingToCart(false), 500)
+  }
   return (
     <CartContext.Provider
       value={{
@@ -21,10 +19,10 @@ export const CartProvider = ({ children }) => {
         addToCart,
         currentPrice,
         addingToCart,
-        handleAddToCart
+        handleAddToCart,
       }}
     >
       {children}
     </CartContext.Provider>
-  );
-};
+  )
+}

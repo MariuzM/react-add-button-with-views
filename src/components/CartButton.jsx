@@ -1,7 +1,5 @@
-import React from 'react';
-import { AnimateOnChange, Bounce } from 'react-animation';
-import styled, { keyframes } from 'styled-components';
-// import { CartContext } from '../components/_CartContext';
+import React from 'react'
+import styled from 'styled-components'
 
 const CartIcon = () => (
   <svg viewBox="0 0 19.25 19.25" width="1em" height="1em">
@@ -11,24 +9,18 @@ const CartIcon = () => (
       <circle cx={15.75} cy={17.125} r={1.5} />
     </g>
   </svg>
-);
+)
 
 const CartButton = ({ className, total }) => {
-  // const { total } = React.useContext(CartContext);
   return (
     <div className={className}>
       <CartIcon />
-      {/* <span className="cart-button-total">{total}</span> */}
-      {/* <span className={total >= 1 ? 'cart-button-total' : ''}>
-	        {total >= 1 ? total : ''}
-				</div> */}
-      {/* {total > 0 ? <span className="cart-button-total">{total}</span> : null} */}
       {total > 0 ? <div className="cart-button-total">{total}</div> : null}
     </div>
-  );
-};
+  )
+}
 
-const buttonBackground = '#0071db';
+const buttonBackground = '#0071db'
 const StyledCartButton = styled(CartButton)`
   background: ${buttonBackground};
   border: none;
@@ -56,6 +48,6 @@ const StyledCartButton = styled(CartButton)`
     height: auto;
     // min-width: 20px;
   }
-`;
+`
 
-export default StyledCartButton;
+export default StyledCartButton

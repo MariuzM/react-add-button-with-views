@@ -1,19 +1,17 @@
-# React Add Button to Views
+# NPM Package Selector
 
-Creating simple app to test React logic using with Context + Hooks
+Creating simple app to test React logic using Context, Hooks and API cal's
 
-# NPM Install
+### Installing
 
-```bash
+```
 npm install
 ```
 
-or shorthand
+## Built With
 
-```bash
-npm i
-```
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+- As of 2020-02-02 all latest packages
+- Function components
+- Hooks
+- React Router
+- Material UI

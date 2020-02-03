@@ -1,11 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-dom';
-import { CartContext } from '../components/_CartContext';
-import _1stPage from './_1stPage';
-import _3rdPage from './_3rdPage';
-import _TestPage from './_TestPage';
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import _1stPage from './_1stPage'
+import _3rdPage from './_3rdPage'
+import _TestPage from './_TestPage'
 
-import AddToCartButton from '../components/AddToCartButton';
+import AddToCartButton from '../components/AddToCartButton'
 
 // import { AnimateOnChange } from 'react-animation';
 
@@ -18,22 +17,16 @@ import AddToCartButton from '../components/AddToCartButton';
 // };
 
 export default function SwitchPages() {
-  // const { total, addToCart } = React.useContext(CartContext);
-
   return (
     <Switch>
       <Route exact path="/">
         First Page
         <_1stPage />
-        {/* <Button addToCart={addToCart} /> */}
       </Route>
 
       <Route exact path="/second">
         Second Page
         <AddToCartButton />
-        {/* <button className="btn btn-secondary m-2" type="button" onClick={addToCart}>
-          Add to cart
-        </button> */}
       </Route>
 
       <Route exact path="/third">
@@ -43,11 +36,9 @@ export default function SwitchPages() {
 
       <Route exact path="/test">
         <_TestPage />
-        {/* <div>{total}</div> */}
-        {/* <Test addToCart={addToCart} total={total} /> */}
       </Route>
 
       <Route path="/" render={() => <div>404</div>} />
     </Switch>
-  );
+  )
 }
